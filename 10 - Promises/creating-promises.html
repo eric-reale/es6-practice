@@ -7,9 +7,10 @@
 <body>
 <script>
   const p = new Promise((resolve, reject) => {
+    // resolve('this promise is resolved');
     setTimeout(() => {
       reject(Error('Err wes isn\'t cool'));
-    }, 1000);
+    }, 4000);
   });
 
   p

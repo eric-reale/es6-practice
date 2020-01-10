@@ -16,16 +16,25 @@ const model = 'x5';
 const colour = 'Royal Blue';
 
 // .startsWith()
+const checkCourse = course.startsWith('RFB')
 
 // .endsWith()
+accountNumber.endsWith('RT');
+accountNumber.endsWith('RT', 11) // checks first 11 numbers
 
 // .includes()
+flightNumber.includes('AC'); // case sensitive
 
 // .repeat()
+const repeatThisWord = 'repeat';
+repeatThisWord.repeat(10);
+// 'repeatrepeatrepeatrepeatrepeatrepeatrepeatrepeatrepeatrepeatrepeat'
 
 function leftPad(str, length = 20) {
   return `→ ${' '.repeat(length - str.length)}${str}`;
 }
+
+// ^ results in them being left-aligned cleanly
 
 console.log(leftPad(make));
 console.log(leftPad(model));
